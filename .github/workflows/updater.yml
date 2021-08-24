@@ -30,7 +30,7 @@ jobs:
 
       - name: Get current date
         id: get_date
-        run: echo "::set-output name=date::$(date +'%Y%m%d%H%M')"
+        run: echo "::set-output name=date::$(date +%Y%m%d%H%M)"
         # https://github.community/t/how-can-i-set-an-expression-as-an-environment-variable-at-workflow-level/16516/6
         # ${{steps.get_date.outputs.date}}
 
